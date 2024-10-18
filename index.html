@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Quiz Section -->
+    <div id="quiz-section">
+        <div id="question-container"></div>
+    </div>
+
+    <!-- Result Section -->
+    <div id="result-section" style="display: none;">
+        <p id="result-message"></p>
+        <div id="retry-section" style="display: none;">
+            <button id="retry-btn">Retry Quiz</button>
+        </div>
+    </div>
+
+    <!-- Prize Selection Section -->
+    <div id="prize-section" style="display: none;">
+        <h2>Select a Prize</h2>
+        <div id="boxes-container"></div>
+    </div>
+
+   
+    <!-- Share Section -->
+    <div id="share-section" style="display: none;">
+      <h2>Claim Your Prize</h2>
+      <p>Share the link to this website at least 10 times to proceed:</p>
+      <button id="claim-prizes-btn">Claim Prizes</button>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact-section" style="display: none;">
+        <h2>Contact Information</h2>
+        <form id="contact-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" placeholder="+1 555 555 5555" required>
+            <label for="country">Country Code:</label>
+            <input type="text" id="country" placeholder="e.g., US" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Confirmation Section -->
+    <div id="confirmation-section" style="display: none;">
+        <h2>Thank You!</h2>
+        <p>Your request is being processed. Check your email for updates!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
